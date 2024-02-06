@@ -1,4 +1,5 @@
 let Discord = require("discord.js")
+const keep_alive = require('./keep_alive.js')
 let client = new Discord.Client()
 
 client.on("ready", () => {
