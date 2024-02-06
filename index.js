@@ -5,6 +5,7 @@ let client = new Discord.Client()
 client.on("ready", () => {
   client.user.setActivity('ארנב אוכל גזר', { type: 'WATCHING' });
 })
+
 client.on("message", message => {
   if (message.content === "פרה") {
     message.channel.send("מווווווווווו")
@@ -16,6 +17,7 @@ client.on("message", message => {
     message.channel.send("מיאווווווו")
   }
 })
+
 client.on("message", message => {
   if (message.content === "כבשה") {
     message.channel.send("מהאהאהאהאהאהאה")
@@ -24,10 +26,89 @@ client.on("message", message => {
 
 client.on("message", message => {
   if (message.mentions.has(client.user)) {
-    let answers = ["ארנביםםםם", "מונית", "למבורגיני", "פרארי", "צהוב", "ירוק", "כחול", "לבן", "שחור", "אנטילופה זאת חיה", "רייייייייייייייייייייייייייייייייייייייייייייייייייייייייייייי", "כע אני אוהב אבטיחים", "לאונרדו דיקפריו", "יהודה לוי", "כן", "לא", "בוודאי", "כמובן", "ברור", "איכס לא", "ממש לא", "רק אולי", "כדור", "למה שתשאל/י אם אני אוהב אבטיח", "את/ה מצפה שאני אענה על זה"]
-    message.channel.send(`${answers[Math.floor(Math.random() * answers.length)]}`)
+    let answers = [
+      "ארנביםםםם",
+      "מונית",
+      "למבורגיני",
+      "פרארי",
+      "צהוב",
+      "ירוק",
+      "כחול",
+      "לבן",
+      "שחור",
+      "אנטילופה זאת חיה",
+      "ריייייייייייייייייייייייייייייייייייייייייייייייייייייייייייייי",
+      "כע אני אוהב אבטיחים",
+      "יהודה לוי",
+      "כן",
+      "לא",
+      "בוודאי",
+      "כמובן",
+      "ברור",
+      "איכס לא",
+      "ממש לא",
+      "רק אולי",
+      "כדור",
+      "למה שתשאל/י אם אני אוהב אבטיח",
+      "את/ה מצפה שאני אענה על זה",
+      "קוף בגן עדן",
+      "סליחה על הבלגן",
+      "תפוח אדמה קר",
+      "קוקוס מגניב",
+      "שינני בשמלת ים",
+      "ציפורן מסריח",
+      "כריש בריח",
+      "קרין טובה מאוד",
+      "חתול",
+      "כלב",
+      "שועל",
+      "נמלה",
+      "צב",
+      "צפרדע",
+      "נמר",
+      "זברה",
+      "נשר",
+      "דב",
+      "גמל",
+      "פיל",
+      "אריה",
+      "זיקית",
+      "תרנגול",
+      "נחש",
+      "תרנגולת",
+      "פילוסוף",
+      "דולפין",
+      "תנין",
+      "קוף",
+      "גילה אלרואי",
+      "נטע ברזילי",
+      "ישי ריבו",
+      "מאיה דגן",
+      "אליסף צליל",
+      "טומר גלאז",
+      "עופר ניסים",
+      "דנה אינטרנשיונל",
+      "גיל משעל",
+      "תומר אור",
+      "נועה",
+      "איתן",
+      "שיר",
+      "רוני",
+      "דני",
+      "שלום",
+      "רוּת",
+      "אילנית",
+      "אביה",
+      "דן",
+      "שרה",
+      "עידן",
+      "נועם",
+      "שחר",
+      "ליאון"
+    ];
+    message.channel.send(`${answers[Math.floor(Math.random() * answers.length)]}`);
   }
-})
+});
 
 client.on("message", message => {
   if (message.content === "רוצה לאכול איתי גזר") {
@@ -83,7 +164,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   if (message.content === "כלב") {
-    message.channel.send("כלבים זה אוברייטד")
+    message.channel.send("ווף ווף")
   }
 })
 
@@ -98,6 +179,13 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content === "כן או לא") {
     let answers = ["לא", "כן"]
+    message.channel.send(`${answers[Math.floor(Math.random() * answers.length)]}`)
+  }
+})
+
+client.on("message", message => {
+  if (message.content === "עץ או פלי") {
+    let answers = ["פלי", "עץ"]
     message.channel.send(`${answers[Math.floor(Math.random() * answers.length)]}`)
   }
 })
