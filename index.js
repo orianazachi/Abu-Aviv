@@ -1,18 +1,8 @@
-const express = require("express")
-const app = express()
-app.get("/", (req, res) => {
-  res.send("דור השמן")
-})
-
-app.listen(3000, () => {
-  console.log("Project is Ready!")
-})
-
 let Discord = require("discord.js")
 let client = new Discord.Client()
 
 client.on("ready", () => {
-  client.user.setActivity('אביחי ציפורי', { type: 'WATCHING' });
+  client.user.setActivity('ארנב אוכל גזר', { type: 'WATCHING' });
 })
 client.on("message", message => {
   if (message.content === "פרה") {
@@ -111,4 +101,4 @@ client.on("message", message => {
   }
 })
 
-client.login("ODAyODMzMDg3MjEzNjAwNzY4.GYuyx0.gmZ_k5duGzmhMyEccD9XSzyFY96zJm0zpSwj9g")
+client.login(process.env.TOKEN);
