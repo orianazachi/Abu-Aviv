@@ -25,7 +25,7 @@ client.on("message", message => {
 })
 
 client.on("message", message => {
-  if (message.mentions.has(client.user)) {
+  if (message.mentions.users.has(client.user.id)) {
     let answers = [
       "ארנביםםםם",
       "מונית",
